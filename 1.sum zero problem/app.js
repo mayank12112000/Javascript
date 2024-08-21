@@ -23,7 +23,7 @@ console.log('1:', findSumZeroPair(arr1))
 console.log('2:', findSumZeroPair(arr2))
 
 // second solution --
-const findSumZeroPair2 =(arr)=>{ // only work when arr is sorted
+const findSumZeroPair2 =(arr)=>{ // only work when arr is sorted: O(n^2)
     for(let i=0;i<arr.length;i++){
         let right = arr[i]
         for(let j = arr.length-1;j>=0;j--){
@@ -39,7 +39,7 @@ const findSumZeroPair2 =(arr)=>{ // only work when arr is sorted
 console.log('3:',findSumZeroPair2(arr1))
 console.log('3:',findSumZeroPair2(arr2))
 
-// third solution same to second but different way to write
+// third solution same to second but different way to write: O(n)
 const findSumZeroPair3 = (arr)=>{
     let left = 0
     let right = arr.length -1
