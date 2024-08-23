@@ -5,6 +5,9 @@ let arr = [1,2,3,4,3,5,4,6,7,8]
 let n = 4
 // first o(n^2)
 const largestConsecutiveDigits=(arr,n)=>{
+    if(n > arr.length){
+        throw new Error("number should not greater than length of array")
+    }
     let sum = 0;
     for(let i= 0;i<arr.length-n+1;i++){
          let tempSum= 0;
